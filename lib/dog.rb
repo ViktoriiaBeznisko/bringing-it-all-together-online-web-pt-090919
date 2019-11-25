@@ -66,7 +66,7 @@ class Dog
     SQL
 
     DB[:conn].execute(sql, id).map { |row| new_from_db(row)}.first
-    end
+  end
   
 end
   
