@@ -75,6 +75,8 @@ class Dog
       WHERE name = ?
       LIMIT 1
     SQL
+    
+    DB[:conn].execute(sql, name)
   end
     
   
