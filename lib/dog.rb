@@ -79,7 +79,6 @@ class Dog
     dog
   end
     
-  end
   
   
   def self.find_by_name(name)
