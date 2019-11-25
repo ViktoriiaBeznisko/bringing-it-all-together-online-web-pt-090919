@@ -68,7 +68,7 @@ class Dog
     DB[:conn].execute(sql, id).map { |row| new_from_db(row)}.first
   end
   
-  def self.find_or_create_by
+  def self.find_or_create_by(name:, breed:)
     
         song = DB[:conn].execute("SELECT * FROM songs WHERE name = ? AND album = ?", name, album)
     if !song.empty?
