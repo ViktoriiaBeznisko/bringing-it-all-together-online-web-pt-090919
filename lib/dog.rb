@@ -83,7 +83,7 @@ class Dog
     sql = <<-SQL
       SELECT *
       FROM dogs
-      WHERE name = ?
+      WHElRE name = ?
       LIMIT 1
     SQL
     
